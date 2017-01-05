@@ -14,6 +14,7 @@
           {{ if or (and (isset .Params "toc") (eq .Params.toc true)) (and (not (isset .Params "toc")) (eq .Site.Params.tableOfContents true)) }}
             {{ $.Scratch.Get "pagetoc" }}
           {{ end }}
+          {{ partial "addtoany.html" . }}
           {{ .Content }}
         </div>
         {{ partial "post_footer.html" . }}

@@ -34,6 +34,7 @@
       {{ with .Site.Params.facebook }}<a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-facebook fa-3x"></i></a>{{ end }}
       {{ with .Site.Params.youtube }}<a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-youtube fa-3x"></i></a>{{ end }}
       {{ with .Site.Params.instagram }}<a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-instagram fa-3x"></i></a>{{ end }}
+      {{ with .Site.Params.weibo }}<a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-weibo fa-3x"></i></a>{{ end }}
 
     <!-- don't need RSS here anymore -->
     <!-- {{ if .Site.Params.rss }}<a href="{{ "/index.xml" | absURL }}" type="application/rss+xml" title="RSS"><i class="fa fa-rss-square fa-3x"></i></a>{{ end }} -->
@@ -75,5 +76,24 @@
       </section>
     {{ end }}
   {{ end }}
+  
+  <section class="even">
+    <h1>Books to Read</h1>
+    <li><a href="https://www.amazon.com/Textbook-Influenza-Robert-G-Webster/dp/0470670487/">Textbook of Influenza</a></li>
+    <li><a href="https://www.amazon.com/Infectious-Diseases-Humans-Dynamics-Publications/dp/019854040X">Infectious Diseases of Humans: Dynamics and Control</a></li>
+    <li><a href="https://www.amazon.com/Modeling-Infectious-Diseases-Humans-Animals/dp/0691116172/">Modeling Infectious Diseases in Humans and Animals</a></li>
+    <li><a href="https://www.amazon.com/Infectious-Disease-Epidemiology-Theory-Practice/dp/1449683797">Infectious Disease Epidemiology: Theory and Practice</a></li>
+    <li><a href="https://www.amazon.com/Bayesian-Analysis-Chapman-Statistical-Science/dp/1439840954">Bayesian Data Analysis</a></li>
+    <li><a href="https://www.amazon.com/Seamless-Integration-Rcpp-Dirk-Eddelbuettel/dp/1461468671">Seamless R and C++ Integration with Rcpp</a></li>
+
+    <h1>Links</h1>
+    <li><a href="http://www.repidemicsconsortium.org/">R Epidemics Consortium</a></li>
+    <li><a href="http://r-bloggers.com/">R-bloggers</a></li>
+
+    <h1>Friends</h1>
+    <li><a href="https://xg1990.com/blog/">xg1990</a></li>
+  </section>
+
+  <script type="text/javascript" src="//ra.revolvermaps.com/0/0/8.js?i=0551xokm7cj&amp;m=0&amp;s=300&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
 
 </aside>
