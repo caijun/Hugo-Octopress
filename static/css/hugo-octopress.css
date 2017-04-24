@@ -12,7 +12,6 @@ h4,
 h5,
 h6,
 p,
-blockquote,
 pre,
 a,
 abbr,
@@ -51,14 +50,6 @@ fieldset,
 form,
 label,
 legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
 article,
 aside,
 canvas,
@@ -92,77 +83,44 @@ html {
     line-height: 1
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    background-color: transparent;
+    display: table;
     width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-}
-
-th {
-    font-weight: bold;
-    text-align: left;
-}
-
-table>caption+thead>tr:first-child>th,
-table>colgroup+thead>tr:first-child>th,
-table>thead:first-child>tr:first-child>th,
-table>caption+thead>tr:first-child>td,
-table>colgroup+thead>tr:first-child>td,
-table>thead:first-child>tr:first-child>td {
-    border-top: 0;
-}
-
-table>thead>tr>th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #ddd;
-}
-
-table>thead>tr>th,
-table>tbody>tr>th,
-table>tfoot>tr>th,
-table>thead>tr>td,
-table>tbody>tr>td,
-table>tfoot>tr>td {
-    padding: 8px;
-    line-height: 1.5;
-    vertical-align: top;
-    border-top: 1px solid #ddd;
-}
-
-
-/*table {
     border-collapse: collapse;
     border-spacing: 0;
+    overflow: auto;
 }
 
-caption,
-th,
-td {
-    text-align: left;
-    font-weight: normal;
-    vertical-align: middle;
-}*/
+table, tr {
+    page-break-inside: avoid;
+}
 
-/*table,
-th,
-td {
-    border-left: 1px solid black;
-    /* remove the right border for when overflow happens */
+table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+table td, table th {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+table tr:last-child td {
+    border-bottom-width: 2px;
+}
 
 
-/*    padding: 3px;
-}*/
-
-q,
-blockquote {
+q, blockquote {
     quotes: none
 }
 
@@ -170,10 +128,7 @@ blockquote > p:last-child {
     text-align: right;
 }
 
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
+q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none
 }
