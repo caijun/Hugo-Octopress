@@ -2664,3 +2664,16 @@ h6 {
         left: 1rem;
     }
 }
+
+/* https://bookdown.org/yihui/bookdown/libs/gitbook/css/plugin-bookdown.css
+ */
+div.theorem, div.lemma, div.corollary, div.proposition {
+  font-style: italic;
+}
+span.theorem, span.lemma, span.corollary, span.proposition {
+  font-style: normal;
+}
+div.proof:after {
+  content: "\25a2";
+  float: right;
+}
