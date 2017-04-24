@@ -93,6 +93,8 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     overflow: auto;
+    margin-top: 0;
+    margin-bottom: .85em;
 }
 
 table, tr {
@@ -119,18 +121,39 @@ table tr:last-child td {
     border-bottom-width: 2px;
 }
 
+table tr.header {
+    border-top-width: 2px;
+}
 
-q, blockquote {
-    quotes: none
+.kable_wrapper {
+    border-spacing: 20px 0;
+    border-collapse: separate;
+    border: none;
+    margin: auto;
+}
+
+.kable_wrapper > tbody > tr > td {
+    vertical-align: top;
+}
+
+table.kable_wrapper > tbody > tr, table.kable_wrapper > tbody > tr > td {
+    border-top: none;
+}
+
+table.kable_wrapper > tbody > tr:last-child > td {
+    border-bottom: none;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 0 0 .85em;
+    padding: 0 15px;
+    color: #858585;
+    border-left: 4px solid #e5e5e5;
 }
 
 blockquote > p:last-child {
     text-align: right;
-}
-
-q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none
 }
 
 a img {
@@ -323,10 +346,7 @@ section section section h3 {
     font-size: .8em
 }
 
-p,
-article blockquote,
-ul,
-ol {
+p, ul, ol {
     margin-bottom: 0.8em;
     /* changed this from 1.5em to 0.8 */
 }
@@ -449,38 +469,6 @@ small {
 
 big {
     font-size: 1.2em
-}
-
-article blockquote {
-    font-style: italic;
-    position: relative;
-    font-size: 1.0em;
-    line-height: 1.5em;
-    padding-left: 1em;
-    border-left: 4px solid rgba(170, 170, 170, 0.5)
-}
-
-article blockquote cite {
-    font-style: italic
-}
-
-article blockquote cite a {
-    color: #aaa !important;
-    word-wrap: break-word
-}
-
-article blockquote cite:before {
-    content: '\2014';
-    padding-right: .3em;
-    padding-left: .3em;
-    color: #aaa
-}
-
-@media only screen and (min-width: 992px) {
-    article blockquote {
-        padding-left: 1.5em;
-        border-left-width: 4px
-    }
 }
 
 .pullquote-right:before,
