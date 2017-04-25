@@ -1,75 +1,4 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -87,10 +16,23 @@ ol, ul {
     list-style: none
 }
 
+table.highlighttable tr {
+    background-color: transparent;
+}
+
+table.highlighttable td {
+    border-top: none;
+    border-bottom: none;
+}
+
+table.highlighttable, table.highlighttable th {
+    border-left: 1px solid black;
+    padding: 3px;
+}
+
 table {
     display: table;
     width: 100%;
-    border-collapse: collapse;
     border-spacing: 0;
     overflow: auto;
     margin-top: 0;
@@ -233,13 +175,7 @@ body>div>div {
 }
 
 .heading,
-body>header h1,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body>header h1, h1, h2, h3, h4, h5, h6 {
     font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif
 }
 
@@ -262,12 +198,7 @@ body,
     /* font-family: "PT Serif", Georgia, Times, "Times New Roman", serif */
 }
 
-.mono,
-pre,
-code,
-tt,
-p code,
-li code {
+.mono, pre, code, tt, p code, li code {
     font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 }
 
@@ -303,12 +234,7 @@ h1 {
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     text-rendering: optimizelegibility;
     margin-bottom: 1em;
     font-weight: bold;
@@ -379,19 +305,11 @@ ol ol ol {
     margin-bottom: 0px
 }
 
-ul,
-ul ul,
-ul ol,
-ol,
-ol ul,
-ol ol {
+ul, ul ul, ul ol, ol, ol ul, ol ol {
     margin-left: 1.3em
 }
 
-ul ul,
-ul ol,
-ol ul,
-ol ol {
+ul ul, ul ol, ol ul, ol ol {
     margin-bottom: 0em
 }
 
@@ -403,8 +321,7 @@ em {
     font-style: italic
 }
 
-sup,
-sub {
+sup, sub {
     font-size: 0.75em;
     position: relative;
     display: inline-block;
@@ -438,23 +355,19 @@ q:after {
     content: "\201D"
 }
 
-em,
-dfn {
+em, dfn {
     font-style: italic
 }
 
-strong,
-dfn {
+strong, dfn {
     font-weight: bold
 }
 
-del,
-s {
+del, s {
     text-decoration: line-through
 }
 
-abbr,
-acronym {
+abbr, acronym {
     border-bottom: 1px dotted;
     cursor: help
 }
@@ -490,9 +403,7 @@ big {
     margin: .5em 1.5em 1em 0
 }
 
-.force-wrap,
-article a,
-aside.sidebar a {
+.force-wrap, article a, aside.sidebar a {
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
@@ -1566,11 +1477,10 @@ pre {
     -o-border-radius: 0.0em;
     border-radius: 0.0em;
     line-height: 1.45em;
-    margin-bottom: 0em;
+    margin: 0.4em 0em;
     padding: 0em 0em;
     color: #93a1a1;
     font-size: 80%;
-    /* change the code font size */
 }
 
 h3.filename+pre {
@@ -1582,8 +1492,7 @@ h3.filename+pre {
     border-top-right-radius: 0px
 }
 
-p code,
-li code {
+p code, li code {
     display: inline-block;
     white-space: no-wrap;
     background: #fff;
@@ -1600,8 +1509,7 @@ li code {
     margin: -1px 0
 }
 
-p pre code,
-li pre code {
+p pre code, li pre code {
     font-size: 1em !important;
     background: none;
     border: none
@@ -1962,8 +1870,7 @@ html .gist .gist-file .gist-syntax .highlighttable pre div .gi .x,
     width: 100%
 }
 
-.highlighttable,
-.gist-highlighttable {
+.highlighttable, .gist-highlighttable {
     margin-bottom: 1.8em;
     background: #002b36;
     overflow-y: hidden;
@@ -2498,6 +2405,7 @@ pre span {
 
 td.code {
     width: 95%;
+    border-left: 1px solid black;
 }
 
 
@@ -2524,7 +2432,7 @@ div.entry-content > div.highlight {
     border-color: #002B36;
     overflow-x: auto;
     overflow-y: hidden;
-    margin-bottom: 0.4em;
+    margin: 0.4em 0.0em;
 }
 
 
