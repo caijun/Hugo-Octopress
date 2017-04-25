@@ -16,6 +16,10 @@ ol, ul {
     list-style: none
 }
 
+table.highlighttable {
+    border-collapse: separate;
+}
+
 table.highlighttable tr {
     background-color: transparent;
 }
@@ -34,6 +38,7 @@ table {
     display: table;
     width: 100%;
     border-spacing: 0;
+    border-collapse: collapse;
     overflow: auto;
     margin-top: 0;
     margin-bottom: .85em;
@@ -102,18 +107,7 @@ a img {
     border: none
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
     display: block
 }
 
@@ -174,8 +168,7 @@ body>div>div {
     border-right: 1px solid #e0e0e0
 }
 
-.heading,
-body>header h1, h1, h2, h3, h4, h5, h6 {
+.heading, body>header h1, h1, h2, h3, h4, h5, h6 {
     font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif
 }
 
@@ -192,9 +185,7 @@ body>footer {
     font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif
 }
 
-.serif,
-body,
-#content .blog-index a[rel=full-article] {
+.serif, body, #content .blog-index a[rel=full-article] {
     /* font-family: "PT Serif", Georgia, Times, "Times New Roman", serif */
 }
 
@@ -241,34 +232,23 @@ h1, h2, h3, h4, h5, h6 {
     /*margin-top: 1em;*/
 }
 
-h2,
-section h1 {
+h2, section h1 {
     font-size: 1.5em
 }
 
-h3,
-section h2,
-section section h1 {
+h3, section h2, section section h1 {
     font-size: 1.3em
 }
 
-h4,
-section h3,
-section section h2,
-section section section h1 {
+h4, section h3, section section h2, section section section h1 {
     font-size: 1em
 }
 
-h5,
-section h4,
-section section h3 {
+h5, section h4, section section h3 {
     font-size: .9em
 }
 
-h6,
-section h5,
-section section h4,
-section section section h3 {
+h6, section h5, section section h4, section section section h3 {
     font-size: .8em
 }
 
