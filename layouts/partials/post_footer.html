@@ -33,7 +33,7 @@
       <a class="basic-alignment right" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
     {{ end }}
   </p>
-  {{ if ne .Site.Params.disqusShortname "" }}
+  {{ if .Site.DisqusShortname }}
     {{ if not (eq .Params.comments false) }}
       {{ partial "disqus.html" . }} <!-- https://github.com/onevcat/vno/issues/13 -->
     {{ end }}
