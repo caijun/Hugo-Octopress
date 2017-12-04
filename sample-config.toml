@@ -12,9 +12,10 @@ disqusShortname = "Your disqus shortname"
 # Number of blog posts in each pagination page
 paginate = 6
 
-# Keep it as false please, the CSS file contains the code for highlighting
-pygmentsuseclasses = false
 pygmentsstyle = "solarized_dark"
+
+# Use internal highlighter instead of Chroma
+pygmentsUseClassic=true
 
 # You need to install Solarized from https://github.com/john2x/solarized-pygment
 # Octopress classic theme uses Solarized_dark
@@ -95,6 +96,11 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # Google analytics code - remove if you do not have/want Google Analytics - needs JavaScript
   # googleAnalytics = "UA-XXXXX-X"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
 
   # Switch to true to enable RSS icon link
   rss = true
