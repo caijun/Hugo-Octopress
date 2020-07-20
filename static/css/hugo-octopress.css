@@ -210,8 +210,12 @@ h1 {
     font-size: 2.2em;
     line-height: 1.2em
 }
+<<<<<<< HEAD
 
 @media only screen and (min-width: 992px) {
+=======
+/* @media only screen and (min-width: 992px) {
+>>>>>>> upstream/master
     body {
         font-size: 1.15em
     }
@@ -219,9 +223,19 @@ h1 {
         font-size: 2.6em;
         line-height: 1.2em
     }
+<<<<<<< HEAD
 }
 
 h1, h2, h3, h4, h5, h6 {
+=======
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+>>>>>>> upstream/master
     text-rendering: optimizelegibility;
     margin-bottom: 1em;
     font-weight: bold;
@@ -1201,9 +1215,12 @@ article>footer p.meta {
     clear: both;
     overflow: hidden
 }
+<<<<<<< HEAD
 
 .blog-index article+article {}
 
+=======
+>>>>>>> upstream/master
 #content .blog-index {
     padding-top: 0;
     padding-bottom: 0
@@ -1313,6 +1330,7 @@ p.meta+.sharing {
     display: none
 }
 
+<<<<<<< HEAD
 .highlighttable,
 html .gist .gist-file .gist-syntax .gist-highlighttable {
     border-left: 1px solid #05232b !important;
@@ -1384,6 +1402,8 @@ figure.code .highlighttable *::selection {
     text-shadow: #002b36 0 1px
 }
 
+=======
+>>>>>>> upstream/master
 pre {
     background: #002b36 top left;
     -webkit-border-radius: 0.0em;
@@ -1392,7 +1412,11 @@ pre {
     -o-border-radius: 0.0em;
     border-radius: 0.0em;
     line-height: 1.45em;
+<<<<<<< HEAD
     margin: 0.4em 0em;
+=======
+    margin-bottom: 0.8em;
+>>>>>>> upstream/master
     padding: 0em 0em;
     color: #93a1a1;
     font-size: 80%;
@@ -1427,7 +1451,8 @@ p code, li code {
 p pre code, li pre code {
     font-size: 1em !important;
     background: none;
-    border: none
+    border: none;
+    color: #93a1a1;
 }
 
 /* Fix codecaption and the new Chroma highlighter */
@@ -1450,6 +1475,7 @@ div.linenodiv > pre > code
 
 /* End fix codecaption and the new Chroma highlighter */
 
+<<<<<<< HEAD
 .pre-code span,
 html .gist .gist-file .gist-syntax .highlighttable pre span,
 .highlighttable code span {
@@ -1793,6 +1819,8 @@ html .gist .gist-file .gist-syntax .highlighttable pre div .gi .x,
     overflow-x: auto
 }
 
+=======
+>>>>>>> upstream/master
 pre::-webkit-scrollbar,
 .highlighttable::-webkit-scrollbar,
 .gist-highlighttable::-webkit-scrollbar {
@@ -1812,7 +1840,7 @@ figure.code {
     background: none;
     padding: 0;
     border: 0;
-    margin-bottom: 1.5em
+    margin-bottom: 0.8em
 }
 
 figure.code pre {
@@ -1830,7 +1858,6 @@ figure.code .highlighttable {
 }
 
 .code-title,
-/*html .gist .gist-file .gist-meta a[href*='#file'],*/
 h3.filename,
 figure.code figcaption {
     /* figcaption changes */
@@ -1857,7 +1884,6 @@ figure.code figcaption {
 }
 
 .download-source,
-/*html .gist .gist-file .gist-meta a[href*=raw],*/
 figure.code figcaption a {
     position: absolute;
     right: .8em;
@@ -1870,7 +1896,6 @@ figure.code figcaption a {
 }
 
 .download-source:hover,
-/*html .gist .gist-file .gist-meta a[href*=raw]:hover,*/
 figure.code figcaption a:hover {
     text-decoration: underline
 }
@@ -2087,6 +2112,7 @@ aside.sidebar:hover a:hover {
     color: #0181eb
 }
 
+<<<<<<< HEAD
 .aside-alt-link,
 #pinboard_linkroll .pin-tag {
     color: #7e7e7e
@@ -2097,6 +2123,8 @@ aside.sidebar:hover a:hover {
     color: #0181eb
 }
 
+=======
+>>>>>>> upstream/master
 @media only screen and (min-width: 768px) {
     .toggle-sidebar {
         outline: none;
@@ -2157,6 +2185,7 @@ aside.sidebar:hover a:hover {
     }
 }
 
+<<<<<<< HEAD
 .googleplus h1 {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
@@ -2214,6 +2243,8 @@ aside.sidebar:hover a:hover {
     font-size: 1em
 }
 
+=======
+>>>>>>> upstream/master
 body>footer {
     font-size: 1em;
     /* increase font size for footer */
@@ -2255,7 +2286,7 @@ body>footer p:last-child {
     margin-bottom: 0
 }
 
-/* Taken from hyde-x.css to format labels (categories) as octopress doesn't have  */
+/* Taken from hyde-x.css to format labels (categories) as Octopress doesn't have  */
 
 .label {
     display: inline;
@@ -2370,8 +2401,12 @@ h6 {
     margin-top: 0.8em;
 }
 
+<<<<<<< HEAD
 
 /* side bar code from hyde-x */
+=======
+/* side bar code from hyde-x - start */
+>>>>>>> upstream/master
 
 
 /*
@@ -2433,7 +2468,9 @@ div.proof:after {
   float: right;
 }
 
-/* Start - Making the gist work */
+/* side bar code from hyde-x - end */
+
+/* making the gist work - start */
 .gist .gist-meta {
     font-size: 90% !important;
     color: #586069 !important;
@@ -2510,6 +2547,34 @@ div.proof:after {
     font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace !important;
 }
 
-/* End credit gist */
+/* credit gist - end*/
 
+/* making the gist work - end */
+
+/* Hugo Figure shortcode - start */
+
+figure figcaption {
+    background: #fff;
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+    display: block;
+}
+
+figure {
+    color: #666;
+}
+
+figure a {
+    color: #666;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+<<<<<<< HEAD
 /* End - Making the gist work */
+=======
+/* Hugo Figure shortcode - end */
+>>>>>>> upstream/master
